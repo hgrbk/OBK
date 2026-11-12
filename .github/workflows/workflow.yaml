@@ -159,8 +159,6 @@ jobs:
         include:
           - platform: OpenBK7252
             variant: default
-          - platform: OpenTXW81X
-            variant: default
     steps:
       - name: Source checkout
         uses: actions/checkout@v5
