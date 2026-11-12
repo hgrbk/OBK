@@ -34,7 +34,7 @@ LDLIBS := -lpthread -lm -lnsl
 CPPFLAGS ?= $(INCLUDES) -MMD -MP -std=gnu99 -DWINDOWS -DLINUX
 
 
-CFLAGS ?= -std=gnu99 -W -Wall -Wextra -g
+CFLAGS ?= -std=gnu99 -W -Wall -Wextra -g -Wno-unused-but-set-variable
 LDFLAGS ?=
 
 # Append ASAN flags if ASAN=1
